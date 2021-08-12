@@ -5,7 +5,7 @@ def leap_year_calc():
   test= input("What year are you checking? ")
   year = int(test)
   if ((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0):
-    prompt = str(year) + " Is a leap year"
+    prompt = str(year) + " Is a leap year\n"
     print (prompt)
     return leapyear == True
   else:
@@ -24,7 +24,7 @@ def leap_year_list():
   return leap_years
 
 while leapyear:
-  question = input("Do you want to know if a year is a leap year(type 'y'), \nor see a list of leap years(type 'l') or exit (type 'e'? ").lower()
+  question = input("\nDo you want to know if a year is a leap year(type 'y'), \nor see a list of leap years(type 'l') or exit (type 'e'? ").lower()
   if question == 'y':
     leap_year_calc()
   elif question == 'l':
