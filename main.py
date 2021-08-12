@@ -30,7 +30,7 @@ while leapyear:
   elif question == 'l':
     leap_year_list()
   else:
-    leapyear == False
+    leapyear = False
 
 #leap_year_calc()
 #leap_year_list()
